@@ -6,7 +6,7 @@ Place your images here:
 - `screenshot-today.jpg` - Today screen with verse card
 - `screenshot-favorites.jpg` - Favorites screen
 - `screenshot-search.jpg` - Search screen  
-- `screenshot-about.jpg` - About screen
+- `screenshot-memorization.jpg` - Memorization screen
 
 ## Background Images
 - `verse-background.jpg` - The beautiful sunset/sunrise background image for verse cards
