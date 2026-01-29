@@ -16,6 +16,8 @@ The following screenshots are displayed on the main page:
 8. `how_to_play-1284x2778.png` - How to Play screen
 9. `setting_1-1284x2778.png` - Settings screen 1
 10. `setting_2-1284x2778.png` - Settings screen 2
+11. `setting_3-1284x2778.png` - Settings screen 3
+12. `setting_4-1284x2778.png` - Settings screen 4
 
 ## Background Images
 
