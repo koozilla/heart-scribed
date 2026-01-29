@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
+
         @media (prefers-color-scheme: dark) {
             html.dark {
                 color-scheme: dark;
@@ -16,148 +18,176 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-white min-h-screen">
-    <!-- Header -->
-    <header class="bg-gray-900 px-4 py-4 flex items-center">
-        <div class="flex items-center">
-            <div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center mr-2 relative">
-                <svg class="w-5 h-5 text-white absolute" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                <svg class="w-3 h-3 text-yellow-400 absolute" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.364 2.636L21.364 5.636C21.754 6.026 21.754 6.659 21.364 7.05L19.95 8.464L15.536 4.05L16.95 2.636C17.341 2.246 17.974 2.246 18.364 2.636ZM14.121 5.293L4.293 15.121C4.105 15.309 4 15.563 4 15.828V19H7.172C7.437 19 7.691 18.895 7.879 18.707L17.707 8.879L14.121 5.293Z" />
-                </svg>
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="bg-gray-900 px-4 py-4 flex items-center">
+            <div class="flex items-center">
+                <div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center mr-2 relative">
+                    <svg class="w-5 h-5 text-white absolute" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-400 absolute" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.364 2.636L21.364 5.636C21.754 6.026 21.754 6.659 21.364 7.05L19.95 8.464L15.536 4.05L16.95 2.636C17.341 2.246 17.974 2.246 18.364 2.636ZM14.121 5.293L4.293 15.121C4.105 15.309 4 15.563 4 15.828V19H7.172C7.437 19 7.691 18.895 7.879 18.707L17.707 8.879L14.121 5.293Z" />
+                    </svg>
+                </div>
+                <h1 class="text-white text-lg font-semibold">Heart Scribed</h1>
             </div>
-            <h1 class="text-white text-lg font-semibold">Heart Scribed</h1>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main Content -->
-    <main class="px-4 py-6 pb-24 max-w-4xl mx-auto">
-        <div class="mb-8">
-            <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
-            <p class="text-gray-400 text-sm">Last updated: <span id="current-date"></span></p>
-        </div>
+        <!-- Main Content -->
+        <main class="px-4 py-6 pb-24 max-w-4xl mx-auto">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+                <p class="text-gray-400 text-sm">Last updated: <span id="current-date"></span></p>
+            </div>
 
-        <div class="space-y-8">
-            <!-- Introduction -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Introduction</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Heart Scribed ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application ("App"). We respect your privacy and are transparent about our data practices.
-                </p>
-            </section>
+            <div class="space-y-8">
+                <!-- Introduction -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Introduction</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Heart Scribed ("we," "our," or "us") is committed to protecting your privacy. This Privacy
+                        Policy explains how we handle information when you use our mobile application ("App"). We
+                        respect your privacy and are transparent about our data practices.
+                    </p>
+                </section>
 
-            <!-- Data Collection -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Information We Collect</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                    Heart Scribed is designed with privacy in mind. We collect <strong class="text-white">minimal to no personal information</strong>:
-                </p>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
-                    <li><strong class="text-white">App Usage Data:</strong> The App may collect anonymous usage statistics (such as app crashes) to help us improve the App's performance. This data does not identify you personally.</li>
-                    <li><strong class="text-white">Local Storage:</strong> All your saved verses, favorites, and app preferences are stored <strong class="text-white">locally on your device</strong> only. We do not have access to this data.</li>
-                </ul>
-            </section>
+                <!-- Data Collection -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Information We Collect</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Heart Scribed is designed with privacy in mind. We collect <strong class="text-white">minimal to
+                            no personal information</strong>:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
+                        <li><strong class="text-white">App Usage Data:</strong> The App may collect anonymous usage
+                            statistics (such as app crashes) to help us improve the App's performance. This data does
+                            not identify you personally.</li>
+                        <li><strong class="text-white">Local Storage:</strong> All your saved verses, favorites, and app
+                            preferences are stored <strong class="text-white">locally on your device</strong> only. We
+                            do not have access to this data.</li>
+                    </ul>
+                </section>
 
-            <!-- Data Storage -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">How We Store Your Data</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                    <strong class="text-white">All data is stored locally on your device.</strong> This includes:
-                </p>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
-                    <li>Your favorite Bible verses</li>
-                    <li>Your memorization progress</li>
-                    <li>App settings and preferences</li>
-                    <li>Any notes or personalizations you create</li>
-                </ul>
-                <p class="text-gray-300 text-sm leading-relaxed mt-4">
-                    We do <strong class="text-white">not</strong> store, transmit, or have access to any of your personal data. Your data never leaves your device unless you explicitly choose to share it (e.g., sharing a verse via your device's sharing features).
-                </p>
-            </section>
+                <!-- Data Storage -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">How We Store Your Data</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        <strong class="text-white">All data is stored locally on your device.</strong> This includes:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
+                        <li>Your favorite Bible verses</li>
+                        <li>Your memorization progress</li>
+                        <li>App settings and preferences</li>
+                        <li>Any notes or personalizations you create</li>
+                    </ul>
+                    <p class="text-gray-300 text-sm leading-relaxed mt-4">
+                        We do <strong class="text-white">not</strong> store, transmit, or have access to any of your
+                        personal data. Your data never leaves your device unless you explicitly choose to share it
+                        (e.g., sharing a verse via your device's sharing features).
+                    </p>
+                </section>
 
-            <!-- Third-Party Services -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Third-Party Services</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Heart Scribed does not use third-party analytics, advertising networks, or data collection services. We do not share your data with any third parties.
-                </p>
-            </section>
+                <!-- Third-Party Services -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Third-Party Services</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Heart Scribed does not use third-party analytics, advertising networks, or data collection
+                        services. We do not share your data with any third parties.
+                    </p>
+                </section>
 
-            <!-- Children's Privacy -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Children's Privacy</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Our App is suitable for users of all ages, including children. Since we do not collect personal information and all data is stored locally on the device, we comply with children's privacy protection requirements.
-                </p>
-            </section>
+                <!-- Children's Privacy -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Children's Privacy</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Our App is suitable for users of all ages, including children. Since we do not collect personal
+                        information and all data is stored locally on the device, we comply with children's privacy
+                        protection requirements.
+                    </p>
+                </section>
 
-            <!-- Data Security -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Data Security</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Since all your data is stored locally on your device, it is protected by your device's built-in security features (such as device passcode, Face ID, or Touch ID). We recommend keeping your device secure and regularly updating your iOS software.
-                </p>
-            </section>
+                <!-- Data Security -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Data Security</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Since all your data is stored locally on your device, it is protected by your device's built-in
+                        security features (such as device passcode, Face ID, or Touch ID). We recommend keeping your
+                        device secure and regularly updating your iOS software.
+                    </p>
+                </section>
 
-            <!-- Your Rights -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Your Rights</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                    You have complete control over your data:
-                </p>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
-                    <li>You can delete the App at any time, which will remove all locally stored data</li>
-                    <li>You can manage your data through the App's settings</li>
-                    <li>Since we don't collect personal information, there is no data for us to share or delete on our end</li>
-                </ul>
-            </section>
+                <!-- Your Rights -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Your Rights</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        You have complete control over your data:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
+                        <li>You can delete the App at any time, which will remove all locally stored data</li>
+                        <li>You can manage your data through the App's settings</li>
+                        <li>Since we don't collect personal information, there is no data for us to share or delete on
+                            our end</li>
+                    </ul>
+                </section>
 
-            <!-- Changes to Privacy Policy -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Changes to This Privacy Policy</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
-                </p>
-            </section>
+                <!-- Changes to Privacy Policy -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Changes to This Privacy Policy</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        We may update this Privacy Policy from time to time. We will notify you of any changes by
+                        posting the new Privacy Policy on this page and updating the "Last updated" date. You are
+                        advised to review this Privacy Policy periodically for any changes.
+                    </p>
+                </section>
 
-            <!-- Contact -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Contact Us</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    If you have any questions about this Privacy Policy, please contact us through the App Store listing.
-                </p>
-            </section>
+                <!-- Contact -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        If you have any questions about this Privacy Policy, please contact us through the App Store
+                        listing.
+                    </p>
+                </section>
 
-            <!-- Apple App Store Requirements -->
-            <section class="bg-gray-800 rounded-xl p-6">
-                <h2 class="text-xl font-bold mb-4">Apple App Store Privacy Information</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                    In compliance with Apple App Store requirements, we declare:
-                </p>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
-                    <li><strong class="text-white">Data Not Collected:</strong> We do not collect any user data, location data, or personal information.</li>
-                    <li><strong class="text-white">Data Linked to You:</strong> None. All data remains on your device.</li>
-                    <li><strong class="text-white">Data Used to Track You:</strong> None. We do not track users.</li>
-                    <li><strong class="text-white">Data Shared with Third Parties:</strong> None. We do not share any data.</li>
-                </ul>
-            </section>
-        </div>
+                <!-- Apple App Store Requirements -->
+                <section class="bg-gray-800 rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4">Apple App Store Privacy Information</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        In compliance with Apple App Store requirements, we declare:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-2 ml-4">
+                        <li><strong class="text-white">Data Not Collected:</strong> We do not collect any user data,
+                            location data, or personal information.</li>
+                        <li><strong class="text-white">Data Linked to You:</strong> None. All data remains on your
+                            device.</li>
+                        <li><strong class="text-white">Data Used to Track You:</strong> None. We do not track users.
+                        </li>
+                        <li><strong class="text-white">Data Shared with Third Parties:</strong> None. We do not share
+                            any data.</li>
+                    </ul>
+                </section>
+            </div>
 
-        <!-- Back Link -->
-        <div class="mt-8 text-center">
-            <a href="index.html" class="text-blue-400 hover:text-blue-300 text-sm">← Back to Home</a>
-        </div>
-    </main>
+            <!-- Back Link -->
+            <div class="mt-8 text-center">
+                <a href="index.html" class="text-blue-400 hover:text-blue-300 text-sm">← Back to Home</a>
+            </div>
+        </main>
+    </div>
 
     <script>
         // Set current date
-        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
         });
     </script>
 </body>
+
 </html>
